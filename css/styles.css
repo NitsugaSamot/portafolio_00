@@ -9,16 +9,18 @@ html {
 }
 
 body{
-    background-image: linear-gradient(-223deg,rgb(20, 32, 32) 0%, rgb(19, 61, 61)47%, rgb(0, 85, 85) 100% ) ;
-    background-color: rgb(20, 32, 32);
+    background-image: linear-gradient(-223deg,rgb(210, 228, 228) 0%, rgb(33, 117, 117)47%, rgb(3, 116, 116) 100% ) ;
+    background-color: rgb(3, 41, 41);
 }
 
 .modal{
-    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(24, 8, 8);
 }
 footer,
 header{
-    background-image: linear-gradient(-223deg,rgb(8, 99, 61) 0%, rgb(0, 73, 43)47%, rgb(2, 49, 30) 100% ) ;
+    background-color: aliceblue;
+    /* background-image: linear-gradient(-223deg,rgb(210, 225, 219) 0%, rgb(182, 247, 220)47%, rgb(233, 233, 233) 100% ) ; */
     padding: 1rem 0 3rem 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -29,6 +31,68 @@ header{
     text-decoration: none;
 
 }
+
+
+.aboutMe {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/img/foto-tres.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 3rem 0;
+    margin: 2rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+.presentation{
+    border-style: double;
+    padding: 2rem;
+}
+
+.containerAboutMe{
+    border: 2px solid rgb(30, 15, 10);
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+}
+
+.columnsAboutMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Cambia la proporción de las columnas */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 2rem; /* Añade espaciado entre columnas */
+    font-size: 1.5rem; /* Aumenta el tamaño de fuente */
+    color: #333; /* Cambia el color de texto */
+  }
+
+  @media (max-width: 768px) {
+    .columnsAboutMe {
+        display: block;
+    }
+}
+
+/* .columnsAboutMe{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    width: 80%;
+    color: rgb(10, 5, 3);
+} */
+
+.foto-perfil {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 4px solid #fff; /* Agrega un borde alrededor de la imagen */
+    object-fit: cover; /* Controla cómo se ajusta la imagen dentro del contenedor */
+  }
+  
+
+/* .foto-perfil{
+    width: 15rem;
+    border-radius: 50%;
+} */
 
  .navegacion{
     margin-top: 1.3rem;
@@ -54,8 +118,32 @@ header{
     width: 15rem;
 }
 
+.title-tec{
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    text-align: center; /* Alineación de texto al centro */
+    margin-top: 20px; /* Margen superior para separarlo de otros elementos */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    font-weight: bold; /* Negrita */
+    /* Otros estilos según tus preferencias */
+}
+
+.div-title{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title-portfolio{
+    font-size: 2rem; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    text-align: center; /* Alineación de texto al centro */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    font-weight: bold; /* Negrita */    
+}
+
 .containerGral{
-    background-image: linear-gradient(-223deg,rgb(7, 10, 10) 0%, rgb(3, 12, 12)47%, rgb(12, 63, 63) 100% ) ;
+    background-color: aliceblue;
+    /* background-image: linear-gradient(-223deg,rgb(7, 10, 10) 0%, rgb(3, 12, 12)47%, rgb(12, 63, 63) 100% ) ; */
     padding: 1rem;
 
 }
@@ -67,35 +155,61 @@ header{
     color: wheat;
 }
 
+.iconsSkills{
+    gap: 3rem;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill{
+    width: 4rem;
+}
+
 .contenedorPortafolio{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('tu-imagen-de-fondo.jpg');
+    background-size: cover;
+    padding: 2rem; /* Agrega espacio alrededor de las tarjetas */
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
 }
 
 .card{
-    background-image: linear-gradient(-223deg,rgb(25, 88, 34) 0%, rgb(10, 51, 19)47%, rgb(11, 92, 22) 100% ) ;
-    background-color: rgb(32, 63, 63);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-image: linear-gradient(-223deg,rgb(25, 88, 34) 0%, rgb(10, 51, 19)47%, rgb(11, 92, 22) 100% ) ; */
+    /* background-color: rgb(32, 63, 63); */
     padding: 1.5rem;
     margin-bottom: 1rem;
-    gap: 1rem;
+    /* gap: 1rem; */
+    border: 0.1rem solid rgb(11, 32, 68);
+    border-radius: 1rem; /* Añade bordes redondeados a las tarjetas */
+    box-shadow: 0 0 5rem rgba(10, 34, 106, 0.2);
+    max-width: 400px; /* Establece un ancho máximo para las tarjetas */
 }
 
 .imagenCard img{
     width: 25rem;
     height: 30rem;
 }
-.botonSitio{
+
+
+
+
+.botonSitio {
     width: 100%;
     height: 3rem;
-    font-size: 1.6rem;
-    background-color: rgb(31, 82, 65);
+    font-size: 1.2rem; /* Tamaño de fuente ligeramente más pequeño */
+    background-color: rgb(41, 58, 207); /* Color de fondo */
     border: none;
+    color: white; /* Color del texto */
     margin-top: 1rem;
     cursor: pointer;
-    color: antiquewhite;
-}
+    border-radius: 0.7rem; /* Añade bordes redondeados */
+  }
+  
 
 
 
@@ -104,28 +218,46 @@ header{
     text-decoration: none;
     text-align: center;
     border-radius: 3%;
+    border-width: calc(0.1rem + 0.1px); /* Calcula el ancho del borde */
+    border-style: solid;
+    border-color: rgb(26, 84, 160);
     margin-top: 1rem;
     padding: 0.8rem;
-    background-color: rgb(6, 48, 48);
+    background-color: rgba(255, 255, 255, 0.937);
     gap: 1rem;
 }
 
 .contenedorEnlace{
     gap: 1rem;
-    background-color: rgb(10, 41, 41);
+    background-color: rgba(255, 255, 255, 0.937);
+}
+
+#enlacesUpTask{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 3%;
+    border-width: calc(0.1rem + 0.1px); /* Calcula el ancho del borde */
+    border-style: solid;
+     border-color: rgb(26, 84, 160);
+    background-color: rgba(255, 255, 255, 0.937);
 }
 
 #enlacesAPV{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    border-radius: 3%;
+    border-width: calc(0.1rem + 0.1px); /* Calcula el ancho del borde */
+    border-style: solid;
+     border-color: rgb(26, 84, 160);
+    background-color: rgba(255, 255, 255, 0.937);
 }
 .enlaces a{
     text-decoration: none;
-    color: rgb(151, 54, 36);
+    color: rgb(6, 23, 53);
     font-size: 1rem;
 
 }
+
 
 
 
@@ -180,7 +312,7 @@ header{
 
 
 .footer{
-    background-image: linear-gradient(-223deg,rgb(8, 99, 61) 0%, rgb(0, 73, 43)47%, rgb(2, 49, 30) 100% ) ;
+    background-color: aliceblue;
     height: 8rem;
     padding: 1rem 0 3rem 0;
     display: grid;
