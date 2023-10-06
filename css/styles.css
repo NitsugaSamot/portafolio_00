@@ -9,32 +9,72 @@ html {
 }
 
 body{
-    background-image: linear-gradient(-223deg,rgb(210, 228, 228) 0%, rgb(33, 117, 117)47%, rgb(3, 116, 116) 100% ) ;
-    background-color: rgb(3, 41, 41);
+    background-color: aliceblue;
 }
 
 .modal{
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(24, 8, 8);
 }
-footer,
+
 header{
-    background-color: aliceblue;
-    /* background-image: linear-gradient(-223deg,rgb(210, 225, 219) 0%, rgb(182, 247, 220)47%, rgb(233, 233, 233) 100% ) ; */
-    padding: 1rem 0 3rem 0;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    flex-direction: column;
+    padding: 1rem;
+    display: flex;
     justify-content: space-between;
+}
+
+
+.sections{
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .sections {
+        display: block;
+    }
 }
 .enlace{
     text-decoration: none;
 
 }
 
+.containerGral{
+        background-image: linear-gradient(-223deg,rgb(233, 229, 227) 0%, rgb(218, 218, 218)47%, rgb(216, 216, 216) 100% ) ;
+    /* background-color: aliceblue; */
+    /* background-image: linear-gradient(-223deg,rgb(7, 10, 10) 0%, rgb(3, 12, 12)47%, rgb(12, 63, 63) 100% ) ; */
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-image: url(../img/fondo-tres.jpg);
+    background-repeat: repeat;
+    height: 100vh;
+    background-size: cover; */
+}
+
+.boton-info{
+    width: 50%;
+    height: 4rem;
+    font-size: 1.6rem; /* Tamaño de fuente ligeramente más pequeño */
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    color: rgb(49, 48, 44); /* Color del texto */
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 0.7rem; /* Añade bordes redondeados */
+   
+}
+#projects-container{
+    display: none; /* Oculta el componente 'div' por defecto */
+    /* Estilos adicionales para el componente 'div' */
+    
+}
+
+
 
 .aboutMe {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/img/foto-tres.jpg');
+    /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/img/foto-tres.jpg'); */
     background-size: cover;
     text-align: center;
     padding: 3rem 0;
@@ -51,12 +91,14 @@ header{
 .containerAboutMe{
     border: 2px solid rgb(30, 15, 10);
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px; /* Añade bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    margin-bottom: ;
 }
 
 .columnsAboutMe {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr; /* Cambia la proporción de las columnas */
     align-items: center; /* Alinea verticalmente el contenido */
@@ -70,15 +112,6 @@ header{
         display: block;
     }
 }
-
-/* .columnsAboutMe{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    font-size: 1.3rem;
-    margin: 0 auto;
-    width: 80%;
-    color: rgb(10, 5, 3);
-} */
 
 .foto-perfil {
     width: 20rem;
@@ -96,8 +129,8 @@ header{
 
  .navegacion{
     margin-top: 1.3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    gap: 3rem;
 }
 
 .iconoNav{
@@ -141,12 +174,7 @@ header{
     font-weight: bold; /* Negrita */    
 }
 
-.containerGral{
-    background-color: aliceblue;
-    /* background-image: linear-gradient(-223deg,rgb(7, 10, 10) 0%, rgb(3, 12, 12)47%, rgb(12, 63, 63) 100% ) ; */
-    padding: 1rem;
 
-}
 
 .skills{
     justify-content: center;
@@ -170,11 +198,11 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('tu-imagen-de-fondo.jpg');
     background-size: cover;
     padding: 2rem; /* Agrega espacio alrededor de las tarjetas */
     border-radius: 10px; /* Añade bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    /* margin-top: 4rem; */
 }
 
 .card{
@@ -182,7 +210,7 @@ header{
     /* background-image: linear-gradient(-223deg,rgb(25, 88, 34) 0%, rgb(10, 51, 19)47%, rgb(11, 92, 22) 100% ) ; */
     /* background-color: rgb(32, 63, 63); */
     padding: 1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     /* gap: 1rem; */
     border: 0.1rem solid rgb(11, 32, 68);
     border-radius: 1rem; /* Añade bordes redondeados a las tarjetas */
@@ -195,14 +223,11 @@ header{
     height: 30rem;
 }
 
-
-
-
 .botonSitio {
     width: 100%;
     height: 3rem;
     font-size: 1.2rem; /* Tamaño de fuente ligeramente más pequeño */
-    background-color: rgb(41, 58, 207); /* Color de fondo */
+    background-color: rgb(224, 66, 66);
     border: none;
     color: white; /* Color del texto */
     margin-top: 1rem;
@@ -210,9 +235,6 @@ header{
     border-radius: 0.7rem; /* Añade bordes redondeados */
   }
   
-
-
-
 
 .enlaces{
     text-decoration: none;
@@ -255,23 +277,8 @@ header{
     text-decoration: none;
     color: rgb(6, 23, 53);
     font-size: 1rem;
-
 }
 
-
-
-
-/* .modalOculto{
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    transition: all 500ms ease;
-    display: none;
-} */
 
 #contenidoAPV{
     padding: 1rem;
@@ -313,7 +320,7 @@ header{
 
 .footer{
     background-color: aliceblue;
-    height: 8rem;
+    height: 12rem;
     padding: 1rem 0 3rem 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
