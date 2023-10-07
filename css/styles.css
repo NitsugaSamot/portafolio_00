@@ -23,6 +23,13 @@ header{
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    header {
+        display: block;
+        align-items: center;
+    }
+}
+
 .sections{
     display: flex;
     gap: 1rem;
@@ -52,12 +59,22 @@ header{
     background-size: cover; */
 }
 
+.boton-activo {
+    border: 2px solid #f00; /* Cambia el color y el grosor del borde según tus preferencias */
+}
+
+
+.boton-con-borde {
+    border: 2px solid rgb(224, 66, 66); /* Cambia el color y el grosor del borde según tus preferencias */
+}
+
+
 .boton-info{
     width: 50%;
     height: 4rem;
     font-size: 1.6rem; /* Tamaño de fuente ligeramente más pequeño */
     background-color: rgba(255, 255, 255, 0.4);
-    border: none;
+    /* border: none; */
     color: rgb(49, 48, 44); /* Color del texto */
     margin-top: 1rem;
     cursor: pointer;
