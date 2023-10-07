@@ -60,14 +60,8 @@ header{
 }
 
 .boton-activo {
-    border: 2px solid #f00; /* Cambia el color y el grosor del borde según tus preferencias */
+    border: 2px solid rgb(232, 84, 84); /* Cambia el color y el grosor del borde según tus preferencias */
 }
-
-
-.boton-con-borde {
-    border: 2px solid rgb(224, 66, 66); /* Cambia el color y el grosor del borde según tus preferencias */
-}
-
 
 .boton-info{
     width: 50%;
