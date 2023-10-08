@@ -13,7 +13,7 @@ body{
 }
 
 .modal{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(9, 2, 2, 0.8);
     color: rgb(24, 8, 8);
 }
 footer,
@@ -33,6 +33,12 @@ header{
 .sections{
     display: flex;
     gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sections button{
+    background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -46,7 +52,8 @@ header{
 }
 
 .containerGral{
-        background-image: linear-gradient(-223deg,rgb(233, 229, 227) 0%, rgb(218, 218, 218)47%, rgb(216, 216, 216) 100% ) ;
+    background-image: linear-gradient(-223deg,rgba(0, 0, 0, 0.953) 0%, rgb(19, 5, 5)47%, rgb(9, 8, 8) 100% ) ;
+    /* background-image: linear-gradient(-223deg,rgb(233, 229, 227) 0%, rgb(218, 218, 218)47%, rgb(216, 216, 216) 100% ) ; */
     /* background-color: aliceblue; */
     /* background-image: linear-gradient(-223deg,rgb(7, 10, 10) 0%, rgb(3, 12, 12)47%, rgb(12, 63, 63) 100% ) ; */
     padding: 1rem;
@@ -69,7 +76,7 @@ header{
     font-size: 1.6rem; /* Tamaño de fuente ligeramente más pequeño */
     background-color: rgba(255, 255, 255, 0.4);
     /* border: none; */
-    color: rgb(49, 48, 44); /* Color del texto */
+   color: aliceblue;
     margin-top: 1rem;
     cursor: pointer;
     border-radius: 0.7rem; /* Añade bordes redondeados */
@@ -101,7 +108,7 @@ header{
 .containerAboutMe{
     border: 2px solid rgb(30, 15, 10);
     padding: 1rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     border-radius: 10px; /* Añade bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
     margin-bottom: ;
@@ -114,7 +121,7 @@ header{
     align-items: center; /* Alinea verticalmente el contenido */
     gap: 2rem; /* Añade espaciado entre columnas */
     font-size: 1.5rem; /* Aumenta el tamaño de fuente */
-    color: #333; /* Cambia el color de texto */
+    color: rgb(227, 213, 213); /* Cambia el color de texto */
   }
 
   @media (max-width: 768px) {
@@ -198,7 +205,7 @@ header{
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .skill{
     width: 4rem;
@@ -217,7 +224,7 @@ header{
 }
 
 .card{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(8, 1, 1, 0.5);
     /* background-image: linear-gradient(-223deg,rgb(25, 88, 34) 0%, rgb(10, 51, 19)47%, rgb(11, 92, 22) 100% ) ; */
     /* background-color: rgb(32, 63, 63); */
     padding: 1.5rem;
@@ -245,7 +252,14 @@ header{
     cursor: pointer;
     border-radius: 0.7rem; /* Añade bordes redondeados */
   }
+
+.enlaces p{
+    color: aliceblue;
+}
   
+.enlaces img{
+    width: 5rem;
+}
 
 .enlaces{
     text-decoration: none;
@@ -256,13 +270,13 @@ header{
     border-color: rgb(26, 84, 160);
     margin-top: 1rem;
     padding: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.937);
+    background-color: rgba(0, 0, 0, 0.937);
     gap: 1rem;
 }
 
 .contenedorEnlace{
     gap: 1rem;
-    background-color: rgba(255, 255, 255, 0.937);
+    /* background-color: rgba(255, 255, 255, 0.937); */
 }
 
 #enlacesUpTask{
@@ -272,7 +286,7 @@ header{
     border-width: calc(0.1rem + 0.1px); /* Calcula el ancho del borde */
     border-style: solid;
      border-color: rgb(26, 84, 160);
-    background-color: rgba(255, 255, 255, 0.937);
+     background-color: rgba(0, 0, 0, 0.937);
 }
 
 #enlacesAPV{
@@ -282,11 +296,11 @@ header{
     border-width: calc(0.1rem + 0.1px); /* Calcula el ancho del borde */
     border-style: solid;
      border-color: rgb(26, 84, 160);
-    background-color: rgba(255, 255, 255, 0.937);
+     background-color: rgba(0, 0, 0, 0.937);
 }
 .enlaces a{
     text-decoration: none;
-    color: rgb(6, 23, 53);
+    color: rgb(3, 6, 11);
     font-size: 1rem;
 }
 
@@ -346,7 +360,9 @@ header{
 }
 
 .footer{
+    background-image: linear-gradient(-223deg,rgba(0, 0, 0, 0.953) 0%, rgb(19, 5, 5)47%, rgb(9, 8, 8) 100% ) ;
     height: 10rem;
     text-align: center;
     justify-content: center;
+    color: aliceblue;
 }
