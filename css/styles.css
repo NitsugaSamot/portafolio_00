@@ -335,6 +335,16 @@ header{
      border-color: rgb(26, 84, 160);
      background-color: rgba(0, 0, 0, 0.937);
 }
+
+#enlacesAppCook{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 3%;
+    border-width: calc(0.1rem + 0.1px); /* Calcula el ancho del borde */
+    border-style: solid;
+     border-color: rgb(26, 84, 160);
+     background-color: rgba(0, 0, 0, 0.937);
+}
 .enlaces a{
     text-decoration: none;
     color: rgb(3, 6, 11);
